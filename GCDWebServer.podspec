@@ -6,7 +6,7 @@
 # DELETE THIS SECTION BEFORE PROCEEDING!
 
 Pod::Spec.new do |s|
-  s.name     = 'GCDWebServer'
+  s.name     = 'GCDWebServerExtension'
   s.version  = '3.5.4'
   s.author   =  { 'Pierre-Olivier Latour' => 'info@pol-online.net' }
   s.license  = { :type => 'BSD', :file => 'LICENSE' }
