@@ -742,7 +742,7 @@ static inline NSString* _EncodeBase64(NSString* string) {
 - (BOOL)startWithOptions:(NSDictionary<NSString*, id>*)options error:(NSError**)error {
   if (_options == nil) {
     _options = options ? [options copy] : @{};
-#if !TARGET_OS_IPHONE
+#if TARGET_OS_IPHONE
     _suspendInBackground = [(NSNumber*)_GetOption(_options, GCDWebServerOption_AutomaticallySuspendInBackground, @YES) boolValue];
 #endif
     if (![self _start:error])
