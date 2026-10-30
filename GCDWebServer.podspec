@@ -14,9 +14,9 @@ Pod::Spec.new do |s|
   s.summary  = 'Lightweight GCD based HTTP server for OS X & iOS (includes web based uploader & WebDAV server)'
   
   s.source   = { :git => 'https://github.com/stefjen07/GCDWebServer.git', :branch => 'master'}
-  s.ios.deployment_target = '8.0'
-  s.tvos.deployment_target = '9.0'
-  s.osx.deployment_target = '10.9'
+  s.ios.deployment_target = '15.0'
+  s.tvos.deployment_target = '15.0'
+  s.osx.deployment_target = '12.0'
   s.requires_arc = true
   
   s.default_subspec = 'Core'
